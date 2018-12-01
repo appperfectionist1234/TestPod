@@ -13,4 +13,8 @@ open class SubFrameworkHome: NSObject {
     open class func sayHello() {
         print("Saying hello from Subframework")
     }
+    
+    func Hello() {
+        print("Function hello from Subframework")
+    }
 }
