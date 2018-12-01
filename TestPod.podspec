@@ -12,13 +12,14 @@ This fantastic view changes its color gradually makes your app look fantastic!
   s.author           = { 'samson' => 'appperfectionist@gmail.com' }
   s.source           = { :git => 'https://github.com/appperfectionist1234/TestPod.git', :tag => s.version.to_s }
  
- s.dependency 'Alamofire', '~> 4.7'
+ #s.dependency 'Alamofire', '~> 4.7'
   s.framework = "UIKit"
   s.ios.deployment_target = '10.0'
-#  s.source_files = 'SubFramework/**/*.{swift}'
-  s.source_files = 'SubFramework/SubFramework/SubFrameworkHome.swift'
+#  s.source_files = 'SubFramework/**/*.{swift,.h}'
+  s.source_files = 'SubFramework/**'
+ # s.source_files = 'SubFramework/SubFrameworkHome.swift'
 
   s.swift_version = '4.2'
- # s.public_header_files = 'SubFramework/SubFrameworkHome.swift'
+  s.public_header_files = 'SubFramework/**{.swift}'
   
 end
